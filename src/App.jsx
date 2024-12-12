@@ -1,22 +1,37 @@
-const App = () => {
+import { useState } from "react";
+
+function Square({ value }) {
+  function handelClicked() {}
   return (
-    <div>
-      <div className="card bg-base-100 w-96 shadow-xl">
-        <figure>
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-            alt="Shoes"
-          />
-        </figure>
-        <div className="card-body">
-          <h2 className="card-title">Shoes!</h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div className="card-actions justify-end">
-            <button className="btn btn-primary">Buy Now</button>
-          </div>
-        </div>
+    <button
+      onClick={handelClicked}
+      className="bg-white border border-gray-400 w-12 h-12 m-1 text-3xl"
+    >
+      {value}
+    </button>
+  );
+}
+
+const App = () => {
+  const [squares, setSquares] = useState(Array(9).fill(null));
+  return (
+    <>
+      <div className="flex">
+        <Square value={squares[0]} />
+        <Square value={squares[1]} />
+        <Square value={squares[2]} />
       </div>
-    </div>
+      <div className="flex">
+        <Square value={squares[3]} />
+        <Square value={squares[4]} />
+        <Square value={squares[5]} />
+      </div>
+      <div className="flex">
+        <Square value={squares[6]} />
+        <Square value={squares[7]} />
+        <Square value={squares[9]} />
+      </div>
+    </>
   );
 };
 
