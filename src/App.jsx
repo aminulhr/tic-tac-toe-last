@@ -2,6 +2,7 @@ import { useState } from "react";
 
 function Square({ value }) {
   function handelClicked() {}
+  ``;
   return (
     <button
       onClick={handelClicked}
@@ -16,6 +17,7 @@ const App = () => {
   const [squares, setSquares] = useState(Array(9).fill(null));
   return (
     <>
+      <h1>Start Game</h1>
       <div className="flex">
         <Square value={squares[0]} />
         <Square value={squares[1]} />
