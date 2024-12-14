@@ -17,7 +17,7 @@ const App = () => {
   const [squares, setSquares] = useState(Array(9).fill(null));
   return (
     <>
-      <h1>Start Game</h1>
+      <h1 className="text-yellow-400 text-2xl">Start Game</h1>
       <div className="flex">
         <Square value={squares[0]} />
         <Square value={squares[1]} />
