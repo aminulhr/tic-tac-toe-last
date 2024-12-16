@@ -21,6 +21,7 @@ const App = () => {
       <h1 className="text-yellow-400 text-2xl">Start Game</h1>
       <h1 className="text-yellow-400 text-2xl">Start Game</h1>
       <h1 className="text-yellow-400 text-2xl">End Game</h1>
+      <h1 className="text-yellow-400 text-2xl">ReStart Game</h1>
       <div className="flex">
         <Square value={squares[0]} />
         <Square value={squares[1]} />
